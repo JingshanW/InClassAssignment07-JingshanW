@@ -11,8 +11,39 @@
     android:orientation="vertical"
     tools:context="com.example.android.inclassassignment07_jingshanw.MainActivity">
 
-    <TextView
+   <EditText
+       android:id="@+id/title_text_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Title"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Set Title"
+        android:onClick="setTitle"/>
+
+    <EditText
+        android:id="@+id/brand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Brand"/>
+
+    <EditText
+        android:id="@+id/price_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"/>
+
+    <CheckBox
+        android:id="@+id/suv_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is it SUV?"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Car"
+        android:onClick="addCar"/>
 </LinearLayout>
